@@ -1,0 +1,5 @@
+/home/nat/ball_plate_sim/OpEn/python_build_lifted_slow/ball_and_plate_lifted_slow/target/release/build/ball_and_plate_lifted_slow-eb742790e5f798c3/build_script_build-eb742790e5f798c3: build.rs
+
+/home/nat/ball_plate_sim/OpEn/python_build_lifted_slow/ball_and_plate_lifted_slow/target/release/build/ball_and_plate_lifted_slow-eb742790e5f798c3/build_script_build-eb742790e5f798c3.d: build.rs
+
+build.rs:

@@ -19,7 +19,7 @@ mass_ball = 1
 moment_inertia = 0.0005
 gravity_acceleration = 9.8044
 sampling_time_sim = 0.001
-sampling_time_control = 0.01
+sampling_time_control = 0.05
 nx = 4
 
 def dynamics_ct(x, u):
@@ -67,6 +67,8 @@ for k in range(simulation_steps):
 
     # Update the state for the next iteration
     x = x_next
+
+mng.kill()
 
 # Convert state_sequence into a flattened list for plotting
 state_sequence_flat = [item for sublist in state_sequence for item in sublist]

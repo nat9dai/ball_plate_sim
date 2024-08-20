@@ -1,0 +1,5 @@
+/home/nat/ball_plate_sim/OpEn/python_build_lifted/ball_and_plate_lifted/target/release/build/icasadi_ball_and_plate_lifted-5e3365e0912eb22d/build_script_build-5e3365e0912eb22d: icasadi_ball_and_plate_lifted/build.rs
+
+/home/nat/ball_plate_sim/OpEn/python_build_lifted/ball_and_plate_lifted/target/release/build/icasadi_ball_and_plate_lifted-5e3365e0912eb22d/build_script_build-5e3365e0912eb22d.d: icasadi_ball_and_plate_lifted/build.rs
+
+icasadi_ball_and_plate_lifted/build.rs:

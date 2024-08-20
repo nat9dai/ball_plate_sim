@@ -4,9 +4,9 @@ import opengen as og
 mass_ball = 1
 moment_inertia = 0.0005
 gravity_acceleration = 9.8044
-sampling_time = 0.01
+sampling_time = 0.05
 nx = 4
-N = 15
+T = 15
 
 def dynamics_ct(x, u):
     dx1 = x[1]
@@ -40,17 +40,16 @@ def stage_cost(x, u):
     cost = 5*x[0]**2 + 0.01*x[1]**2 + 0.01*x[2]**2 + 0.05*x[3]**2 + 2.2*u**2
     return cost
 
-
 def terminal_cost(x):
     cost = 100*x[0]**2 + 50*x[2]**2 + 20*x[1]**2 + 0.8*x[3]**2
     return cost
 
-u_seq = cs.MX.sym("u", N)  # sequence of all u's
+u_seq = cs.MX.sym("u", T)  # sequence of all u's
 x0 = cs.MX.sym("x0", nx)   # initial state
 
 x_t = x0
 total_cost = 0
-for t in range(0, N):
+for t in range(0, T):
     total_cost += stage_cost(x_t, u_seq[t])  # update cost
     x_t = dynamics_dt(x_t, u_seq[t])         # update state
 
